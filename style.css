@@ -1,0 +1,203 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    zoom: 1;
+}
+
+/* WRITE HERE */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+    font: 16px arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    padding: 20px;
+}
+
+.header .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    width: 1000px;
+    background-color: #fff;
+    margin: auto;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: salmon;
+    padding: 5px;
+}
+
+.header a:hover {
+    background-color: #131313;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    height: 300px;
+    background-image: url(img/land.jpg);
+    background-size: cover;
+    background-position: 0 -200px;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid salmon;
+}
+
+figcaption {
+    font-size: small;
+    color: grey;
+    margin: 10px 20px;
+}
+
+.main {
+    width: 700px;
+    padding: 20px;
+    float: left;
+}
+
+.main h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.main .writer {
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.main .writer a {
+    color: salmon;
+    text-decoration: none;
+}
+
+.main .writer a:hover {
+    font-weight: bold;
+} 
+
+.main p {
+    margin-bottom: 20px;
+    font: 14px/18px Arial;
+    text-align: justify;
+}
+
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+    background-color: #131313;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 10px;
+}
+
+.sidebar h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.sidebar img {
+    width: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    float: left;
+}
+
+.sidebar h4 {
+    margin-top: 10px;
+    font: 18px/18px bold Arial;
+    color: salmon;
+}
+
+.sidebar .testing {
+    margin-top: 18px;
+}
+
+.sidebar p {
+    margin-top: 5px;
+    font: 12px/18px Arial;
+}
+
+.footer {
+    background-color: #131313;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+}
